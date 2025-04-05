@@ -1,0 +1,9 @@
+Factory.class
+com\tp\SalutationAmicale.class
+com\tp\Main.class
+com\tp\SalutationInterface.class
+DocumentInterface.class
+Printer.class
+Document.class
+com\tp\Salutation.class
+com\tp\HelloWorldController.class
