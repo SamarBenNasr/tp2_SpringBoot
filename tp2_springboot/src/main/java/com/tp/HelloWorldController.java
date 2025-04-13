@@ -4,22 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class HelloWorldController {
 
     @Autowired
-    private SalutationInterface salutation1;
+    private Salutation salutation;
     @Autowired
-    @Qualifier(value = "salutationAmicale")
-    private SalutationInterface amicale;
+    private SalutationAmicale salutationAmicale;
 
-    @RequestMapping("/hello")
-    public String helloWorld() {
-        return salutation1.saluer();
+    @RequestMapping(value = "/hello")
+    public String helloWorld1() {
+        return salutation.saluer();
     }
-    @RequestMapping("/helloamical")
-    public String helloAmicale() {
-        return amicale.saluer();
+
+    @RequestMapping(value = "/helloamical")
+    public String helloAmicale1() {
+        return salutationAmicale.saluer();
     }
 }

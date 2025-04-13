@@ -2,10 +2,8 @@ package com.tp;
 
 import org.springframework.stereotype.Component;
 
-@Component(value = "salutation1")
-public class Salutation implements SalutationInterface{
-    @Override
+public class Salutation extends SalutationBase{
     public String saluer() {
-        return "Bonjour";
+        return "Bonjour "+compteur++;
     }
 }
