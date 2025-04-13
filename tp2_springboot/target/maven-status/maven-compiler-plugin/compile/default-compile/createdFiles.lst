@@ -2,6 +2,7 @@ Factory.class
 com\tp\SalutationAmicale.class
 com\tp\Main.class
 com\tp\SalutationInterface.class
+com\tp\DataBaseConfiguration.class
 DocumentInterface.class
 Printer.class
 Document.class
